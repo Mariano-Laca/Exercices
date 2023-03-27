@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+body{
+  background-color:#292a2b;
+  color:#afafaf;
+  font-family:Sans;
+  color:#ffffff;
+}
+form{
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 300px;
+}
+#description{
+  margin: 5px auto;
+  text-align:center;
+  margin-bottom:40px;
+
+}
+h1, p{
+  margin: 5px auto;
+  text-align:center;
+}
+input, select {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+  border-color:	#1a1a1a;
+  background-color:#242424;
+  color:#afafaf;
+  font-family:Sans;
+}
+
+label {
+  display: block;
+	margin: 2rem 0;
+}
+/*Alinear radio:*/
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]{
+  min-height: auto;
+  margin: 0 0.2em 0 2em;
+  display:inline;
+}
+textarea{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#242424;
+  color:#afafaf;
+  font-family:Sans;
+  }
+
+.answer{
+  padding-top:30px;
+  margin:20px auto;
+  text-align:center;
+  font-weight:700;
+}
+#submit{
+  display:block;
+  margin-top:40px;
+  margin:40px auto;
+  padding:10px;
+  font-family:Sans;
+  font-size:18px;
+  color:#afafaf;
+  background-color:#242424;
+  cursor: pointer;
+  border-radius:none;
+  border-width:1px 1px;
+  border:solid;  
+  border-color:#1a1a1a;
+}
+
+
+#submit:hover{
+  background-color:#372f2f;
+}
+a{
+  display:block;
+  margin:10px auto;
+  text-align:center;
+  color:#ffffff;
+}
+a:hover{
+  color:#afafaf;
+}

@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="styles.css">
+<h1 id = "title">Liars Survey Form</h1>
+<p id= "description">Please fill out this form and widhout lies, or we'll call your mom. </p>
+<form id="survey-form">
+
+    <label id="name-label" for="name">Name
+      <input id="name" type="text" placeholder="Enter your real name. We know your name is not 'asdasd'! " required>       </input>
+    </label>
+
+    <label id="email-label"                for="email">Email
+      <input id="email" type="email" placeholder="Enter your email, no of your couple." required>       </input>
+    </label> 
+
+    <label id="number-label"                for="number">Age
+      <input id="number" type="number" min="10" max="99" placeholder="Enter your age. Don't lie, please!" required>       </input>
+    </label>
+<label for="dropdown"> Please respond:
+<select id="dropdown">
+  <option>How liar are you?. Please select!</option>
+  <option>Very liar</option>
+  <option>Almost liar</option>
+  <option>I always tell the truth, even when I lie!</option>
+</select>
+</label>
+
+
+<label class="answer">Are you always wrong in what you say but not in what you meant to say?</label>
+<label for="radios">Yeah, I'm always wrong in what I say. 
+ <input id ="radios" name ="radios" type="radio" class="inline" value="Yes">
+    
+  </input></label>
+<label for="radios">No, I'm never wrong.
+  <input id ="radios" name ="radios" type="radio" class="inline" value="No">
+    
+  </input>
+</label>
+
+<label class="answer">At this moment you are:</label>
+  <input type="checkbox" class="inline" value="very-smiling">
+Very smiling</input>
+<input type="checkbox" class="inline" value="nervous">
+Nervous</input>
+<input type="checkbox" class="inline" value="calm">
+Calm</input>
+<input type="checkbox" class="inline" value="very-calm">
+Calm, smoking weed</input>
+<label class="answer">Please write some verifiable truth about yourself:</label>
+<textarea rows="4" cols="60" placeholder="I will only write true attributes.."></textarea>
+
+<button type="submit" id="submit">Enviar la encuesta</button>
+<hr/>
+
+<a href="https://pythones.net">Visit my blog</a>
+</form>
