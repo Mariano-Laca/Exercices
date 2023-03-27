@@ -17,9 +17,60 @@ label {
     margin: 1em auto;
     text-align: center;
   }
+
   form{ /*Lesson 44: center the form*/
     margin:0 auto;
     max-width:500px;
     min-width:300px;
     width:60vw;
+    padding:0 0 2em 0; /*Lesson62 padding bottom for button*/
+  }
+
+  fieldset{ /*Lesson 45*/
+    border: none;
+    border-bottom: solid 3px #3b3b4f;
+    padding: 2rem 0;
+  }
+
+  fieldset:last-of-type{ /*Lesson 47 the last of type*/
+    border-bottom:none;
+  }
+
+  input, textarea, select{ /*Lesson 48 add a margin to top of element and full width */
+    width:100%;
+    margin:10px 0 0 0;
+    min-height: 2em; /*Lesson 55*/
+  }
+
+  .inline{ /*Lesson 50 add a unset width for inline class to second fieldset elements. Excent this elements to full width*/
+    width: unset;
+    margin:0 0.5em 0 0; /*Lesson 51. Margin right to radio and checkbox items.*/
+    vertical-align: middle; /*Lesson 52 align radio and checkbox items to middle of text*/
+  }
+
+  input, textarea{ /*Lesson 53 add a border and background color to the input and textarea elements*/
+    background-color: #0a0a23;
+    border: solid 1px #0a0a23;
+    color: #fff; /*Lesson 54 if you complete a input don't see text. Change the color and size.*/
+    /*min-height:2em;*/ /*Lesson 55*/
+  }
+
+  input[type="submit"]{ /*Lesson56. Select button using property selector and modify width.*/ 
+    display:block;
+    width:60%;
+    /*margin: 0 auto; /*Lesson57 center the button using the same technique as center form*/
+    font-size:1.1rem; /*Lesson58 Look more inline button*/
+    height:2em;
+    background-color:#3b3b4f; /*Lesson59 colors to the button*/
+    border-color:white;
+    min-width:300px; /*Lesson60 */
+    margin: 1em auto;
+  }
+
+  input[type="file"]{ /*Lesson61. Some browser's modify the input of file type*/
+    padding:1px 2px;
+  }
+
+  a{ /*Lesson63 change the color of link to terms and conditions*/
+    color:#dfdfe2;
   }
