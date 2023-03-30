@@ -1,0 +1,58 @@
+*{ /*Lesson8: Normalize your box model using * selector and set box-sizing: border-box;*/
+    /*Esta propiedaddebe calcular el ancho y alto de un elemento https://developer.mozilla.org/es/docs/Web/CSS/box-sizing*/
+  box-sizing:border-box;
+  
+}
+.gallery img{ /* Lesson8: Select img only from div class gallery*/
+  width:100%;
+  max-width:350px; /*Max width for image is 350px  (ancho)*/
+  height:300px; /*Max height for image is 300px (alto)*/
+  border-radius: 10px; /*Lesson19: border rounded*/
+}
+body{ /*Lesson9: set margin 0, font family and background-color*/
+    margin:0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+  }
+
+  /*Lessson10:
+Alinea tu texto .header en el centro. Pone el texto en mayúsculas usando la propiedad text-transform con uppercase como valor.
+
+Dale un relleno de 32px en todos los lados. Establece el fondo en #0a0a23 y el texto en #fff como valores de color.
+
+Añade un border-bottom con 4px solid #fdb347 como valor.
+Creamos una cabezera de letras blancas sobre un fondo negro con una línea divisoria inferior de color amarillo.*/
+
+.header{
+    text-align:center;
+    text-transform:uppercase;
+    padding:32px;
+    background-color:#0a0a23;
+    color:#fff;
+    border-bottom: solid 4px #fdb347;
+  }
+
+/*Lesson11: Flexbox es un diseño CSS unidimensional que puede controlar la forma en que los elementos se espacian y alinean dentro de un contenedor.
+
+Para utilizarlo, dale a un elemento una propiedad display con el valor flex. Esto hará que el elemento sea un flex container (contenedor flexible). Todos los hijos directos de un contenedor flex se llaman flex items (elementos flex).
+
+Crea un selector .gallery y conviértelo en un contenedor flex.*/
+
+  .gallery{
+    display:flex;
+    flex-direction: row; /*Lesson12: this direction is row-reverse, row (fila), column-reverse, column (columna). Organize elements in file or row and define the order of shows this*/
+    flex-wrap:wrap; /*Lesson13:Haga que sus elementos flexibles se coloquen en la siguiente fila cuando se queden sin espacio. Wrap: al achicarse los elementos se colocan en la siguiente fila o columna. Si usamos nowrap estos se achican permaneciendo*/
+    justify-content:center; /*Lesson14: Jusificar elementos*/
+    align-items:center; /*Lesson15: Como flex-direction es row, entonces se alineará al centro como columna. */
+    padding:20px 10px; /*Lesson16*/
+    max-width: 1400px;
+    margin:0 auto;
+    object-fit:cover; /*Lesson17: Esto le dirá a la imagen que llene el contenedor img mientras mantiene la relación de aspecto, lo que resulta en un recorte para ajustarse.*/
+    gap:16px; /*Lesson18: La propiedad CSS abreviada gap establece los espacios, también conocidos como canales, entre filas y columnas. La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.*/
+  }
+  
+  /*Lesson20:El pseudo-elemento ::after crea un elemento que es el último hijo del elemento seleccionado. Puedes hacer uso de él para añadir un elemento vacío a continuación de la ultima imagen. Si en su propiedad width se le asigna el mismo valor que tiene en las imágenes, empujará la última imagen hacia la izquierda cuando la galería tenga un diseño de dos columnas. En este momento, está en el centro porque se ha establecido justify-content: center en el contenedor flex.*/
+  .gallery::after{
+    content:"";
+    width:350px;
+  }
