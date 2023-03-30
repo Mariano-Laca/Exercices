@@ -15,6 +15,7 @@ body{ /*Lesson9: set margin 0, font family and background-color*/
     background-color: #f5f6f7;
   }
 
+
   /*Lessson10:
 Alinea tu texto .header en el centro. Pone el texto en mayúsculas usando la propiedad text-transform con uppercase como valor.
 
@@ -50,9 +51,11 @@ Crea un selector .gallery y conviértelo en un contenedor flex.*/
     object-fit:cover; /*Lesson17: Esto le dirá a la imagen que llene el contenedor img mientras mantiene la relación de aspecto, lo que resulta en un recorte para ajustarse.*/
     gap:16px; /*Lesson18: La propiedad CSS abreviada gap establece los espacios, también conocidos como canales, entre filas y columnas. La propiedad gap y sus subpropiedades row-gap y column-gap proporcionan esta funcionalidad para los diseños flex, grid, y multicolumna. La propiedad se aplica al elemento contenedor.*/
   }
-  
+
   /*Lesson20:El pseudo-elemento ::after crea un elemento que es el último hijo del elemento seleccionado. Puedes hacer uso de él para añadir un elemento vacío a continuación de la ultima imagen. Si en su propiedad width se le asigna el mismo valor que tiene en las imágenes, empujará la última imagen hacia la izquierda cuando la galería tenga un diseño de dos columnas. En este momento, está en el centro porque se ha establecido justify-content: center en el contenedor flex.*/
   .gallery::after{
     content:"";
     width:350px;
   }
+
+/*293323*/
