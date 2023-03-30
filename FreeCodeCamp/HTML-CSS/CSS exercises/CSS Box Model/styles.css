@@ -1,0 +1,46 @@
+.canvas{
+  width: 500px; /*Lesson8*/
+  height: 600px; /*Lesson9*/
+  background-color: #4d0f00; /*Lesson10*/
+  /*padding:1px; /*Lesson21*/
+  overflow: hidden;/*Lesson22: evita aumentar en un pixel las dimensiones*/
+  filter: blur(2px);/*Lesson34*/
+}
+.frame{ /*Lesson12*/
+  border:solid black 50px;
+  width:500px; /*Lesson13*/
+  padding:50px; /*Lesson14: En .frame, use la abreviatura padding para aumentar el espacio entre los elementos .frame y .canvas por 50px*/
+  margin:20px auto; /*Lesson15*/
+}
+.one{ /*Lesson17*/
+  width: 425px;
+  height: 150px; /*Lesson18*/
+  background-color: #efb762; /*Lesson19*/
+  margin:20px auto; /*Lesson20*/
+  box-shadow: 0 0 3px 3px #efb762;/*Lesson37*/
+  border-radius:9px;/*Lesson35*/
+  transform: rotate(-0.6deg);/*Lesson43*/
+}
+.two{ /*Lesson24*/
+  width: 475px;
+  height: 200px; /*Lesson25*/
+  background-color: #8f0401;/*Lesson26*/
+  /*margin:auto;*/
+  margin: 0 auto 20px;/* Lesson33*/
+  box-shadow: 0 0 3px 3px #8f0401;/*Lesson37*/
+  border-radius:8px 10px;/*Lesson41*/
+  transform:rotate(0.4deg);/*Lesson44*/
+
+  
+}
+.three{/*Lesson29*/
+  width: 91%;
+  height: 28%; /*lesson30*/
+  background-color: #b20403;/*lesson31*/
+  margin:auto;/*lesson32*/
+  filter:blur(2px); /*lesson36*/
+  box-shadow:0 0 5px 5px #b20403;/*Lesson39*/
+  border-radius:30px 25px 60px 12px; /*Lesson42*/
+  transform:rotate(-0.2)/*Lesson45*/
+}
+.one, .two{filter: blur(1px);}/*Lesson35: Cree una regla destinada tanto a .one como a .two y aumente su efecto blur en 1 píxel.*/
