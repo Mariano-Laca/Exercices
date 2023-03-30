@@ -41,3 +41,42 @@ Para resolver esto, restablezca el modelo de caja creando un selector * y dándo
   .bold{ /*Lesson20*/
     font-weight: 800;
   }
+
+  .large{
+    height:10px;
+  }
+  .large, .medium{ /*Lesson28*/
+    background-color:black;
+    border:0;
+  }
+  .small-text{/*Lesson36: La unidad rem significa root em, y es relativa al tamaño de fuente del elemento html.*/
+    font-size:0.85rem;
+  }
+  .calories-info h2{ /*Lesson 37*/
+    margin:0;
+  }
+
+  .calories-info{ /*Lesson34*/
+    display:flex; /*Use flex*/
+    justify-content:space-between; /*El mayor espacio entre los elementos*/
+    align-items:flex-end;/*Alinear los elementos al final*/
+  }
+  .left-container p{/*Lesson35*/
+    margin:-5px -2px;
+    font-size:2em;
+    font-weight:700;
+  }
+  .calories-info span{/*Lesson36: Cambiar el texto 230 a su lugar*/
+    font-size:2.4em;
+    font-weight:700;
+    font-weight: 700;
+    margin:-7px -2px;
+  }
+
+  .medium{ /*Lesson39*/
+    height:5px;
+  }
+
+  .right{/*Lesson41 Alinear el texto a la derecha usando flex-end*/
+    justify-content:flex-end;
+  }
