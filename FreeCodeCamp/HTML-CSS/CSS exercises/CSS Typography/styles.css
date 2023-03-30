@@ -6,4 +6,38 @@ html{
   }
 .label{ /*Lesson8 class label*/
   border:solid black 2px;
+  width:270px; /*Lesson9*/
+  margin:20px auto; /*Lesson10 increased margin top-bottom 20px auto(center)*/
+  padding:0 7px;
+  }
+
+/*Lesson11: .label con las herramientas de desarrollo de su navegador, puede notar que en realidad tiene 288 píxeles de ancho en lugar de 270. Esto se debe a que, de forma predeterminada, el navegador incluye el borde y el relleno al determinar el tamaño de un elemento.
+
+Para resolver esto, restablezca el modelo de caja creando un selector * y dándole una propiedad box-sizing de border-box.*/
+*{
+  box-sizing: border-box; /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+  
+  }
+
+  header h1{
+    /*font-weight:800; Lesson12 / 20: peso de la fuente*/
+    text-align:center;
+    margin: -4px 0; /*Lesson14: ajustar el texto*/
+    letter-spacing:0.15px; /*Lesson18 espacio entre letras*/
+  }
+
+  p{ /*Lesson15*/
+    margin:0;
+    /*Ahora podemos añadir el espaciado horizontal usando flex. En el selector p, añade la propiedad display establecida a flex y la propiedad justify-content establecida a space-between.*/
+    display:flex;
+    justify-content:space-between;
+    /* Lesson23: Crea un espacio entre los dos elementos p and span para alinearlos uno a cada lado del div*/
+  }
+  .divider{ /*Línea divisoria*/
+    margin:2px 0; /*Lesson17: Elimina los margenes izq y derecho.*/
+    border-bottom: solid 1px #888989;
+  }
+
+  .bold{ /*Lesson20*/
+    font-weight: 800;
   }
