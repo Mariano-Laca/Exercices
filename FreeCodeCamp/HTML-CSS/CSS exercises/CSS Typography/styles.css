@@ -1,0 +1,9 @@
+body{
+    font-family:Open Sans, sans-serif;/*Lesson5 typography (añade sans-serif como respaldo)*/
+  }
+html{
+  font-size:16px; /*Lesson6 increased font size*/
+  }
+.label{ /*Lesson8 class label*/
+  border:solid black 2px;
+  }
