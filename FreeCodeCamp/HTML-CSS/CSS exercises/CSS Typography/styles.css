@@ -80,3 +80,10 @@ Para resolver esto, restablezca el modelo de caja creando un selector * y dándo
   .right{/*Lesson41 Alinear el texto a la derecha usando flex-end*/
     justify-content:flex-end;
   }
+  
+  .indent{ /*Lesson46*/
+    margin-left:1em;
+}
+  .daily-value p:not(.no-divider){ /*Lesson47*/ /*Lesson 48:Modifique su selector .daily-value p para excluir los elementos .no-divider.*/
+    border-bottom:1px solid #888989;
+}
