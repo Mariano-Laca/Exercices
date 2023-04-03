@@ -1,44 +1,77 @@
 body {
-    background: #f5f6f7;
-    color: #1b1b32;
-    font-family: Helvetica;
-    margin: 0;
-  }
-#logo {/*Lesson8,9:*/
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+#logo {
+  /*Lesson8,9:*/
   width: max(100px, 18vw);
-  background-color:#0a0a23;
-  aspect-ratio:35 / 4; /*aspect-ratio para establecer la relación de aspecto a 35 / 4*/
-  padding:0.4rem;
-  }
-header{ /*Lesson10*/
-  display:flex;
-  width:100%;
-  height:50px;
-  background-color:#1b1b32;
-  }
-h1{
-  color:#f1be32;
-  font-size:min(5vw, 1.2em);
-  }
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  /*aspect-ratio para establecer la relación de aspecto a 35 / 4*/
+  padding: 0.4rem;
+}
+
+header {
+  /*Lesson10*/
+  display: flex;
+  /*Lesson48*/
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+
+}
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
+
+}
+
+main {
+  padding-top: 40px;
+}
 
 nav {
   width: 50%;
   max-width: 300px;
   height: 50px;
-  }
+}
 
-nav >ul {
-  display:flex;
-  justify-content:space-evenly; /*LESSON13 FLEXBOX*/
-  }
+/*LESSON13 FLEXBOX*/
+nav>ul {
+  display: flex;
+  flex-wrap: wrap;
+  /*Permite que los botones del header se apilen en columna en caso de pantalla pequeña: responsive */
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
 
-h1, h2{
+h1,
+h2 {
   font-family: Verdana, sans-serif;
-  }
-h2{
-  border-bottom:4px solid #dfdfe2;
-  }
-.sr-only{ /*Lesson25: Hide the text for humans, only readers*/
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+  padding-top: 60px;
+  margin-top: 0px;
+
+}
+
+.sr-only {
+  /*Lesson25: Hide the text for humans, only readers*/
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,4 +81,130 @@ h2{
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+p::before {
+  /*Lesson34: Before -> Antes elemento P*/
+  content: "Question #";
+}
+
+nav li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+li>a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+nav>ul>li:hover {
+  cursor: pointer;
+  background-color: #dfdfe2;
+  color: #1b1b32;
+}
+
+section {
+  /*Lesson51 margin*/
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+.info {
+  padding: 10px 0 0 1;
+}
+
+/*Lesson63*/
+.formrow {
+  margin: 10px 1 0 1;
+  padding: 0 1 0 1;
+}
+
+input {
+  font-size: 1.0em;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+  /*Lesson55!!*/
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+.info label,
+.info input {
+  display: inline-block;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.question {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  /*Lesson62*/
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+footer {
+  background-color: #2a2a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 10px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
+/*Lesson67: Envuelve en una regla media*/
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth; /*Lesson66: Agrega un scrolleo suave al clikear los enlaces del nav que llevan al ancla.*/
+  }
 }
