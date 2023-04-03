@@ -87,3 +87,12 @@ Para resolver esto, restablezca el modelo de caja creando un selector * y dándo
   .daily-value p:not(.no-divider){ /*Lesson47*/ /*Lesson 48:Modifique su selector .daily-value p para excluir los elementos .no-divider.*/
     border-bottom:1px solid #888989;
 }
+.double-indent{/*Lesson59*/
+  margin-left: 2em;
+}
+.note{ /*Lesson66*/
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding:0px 8px;
+  text-indent:-8px;/*Lesson67*/
+  }
