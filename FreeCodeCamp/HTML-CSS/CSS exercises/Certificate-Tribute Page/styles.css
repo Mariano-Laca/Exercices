@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(233, 233, 233);
+  margin:10% 0;
+}
+#main{
+  width: auto;
+
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  width: 100%;
+  height:auto;
+  min-height: 30px;
+  background-color: rgba(57, 15, 6, 0.7);
+
+}
+
+.navbar__ul{
+  margin:auto;
+  display:flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navbar__ul-li{
+  font-size: 2.5vw;
+  margin:auto;
+}
+
+#title{
+  display: block;
+  width: 100%;
+  margin:3vw 0 0 0;
+  text-align:center;
+  font-family: 'Lobster', cursive, sans-serif;
+  color:rgb(71, 55, 2);
+  font-size: 8vw; /*Responsive text size */
+}
+
+#img-div{
+  display:flex;
+}
+
+#image{
+  display: block;
+  width: auto;
+  max-width: 30vw;
+  min-width: none;
+}
+
+
+#img-caption{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color:rgb(34, 26, 1);
+  font-size: 2.5vw; /*Responsive text size */
+  margin:10% 5%;
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    width: auto;
+    height: auto;
+    min-height: max-content;
+    min-width: max-content;
+    position:sticky;
+    text-align: left;
+  }
+  .navbar__ul {
+    display: block;
+    margin: 0;
+    
+  }
+  .navbar__ul-li{
+    font-size: 2.5vw;
+    
+  }
+  body{
+    margin:0;
+  }
+
+}
